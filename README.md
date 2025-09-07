@@ -4,7 +4,7 @@ This repository contains a project designed to provide a practical, real world d
 
 ## **Table of Contents**
 
-* [Core Concepts Explained] 
+* [Core Concepts Explained]()
   * [What is a Kubernetes Deployment?]  
   * [The Principle of Desired State] 
   * [Automated Self Healing]  
