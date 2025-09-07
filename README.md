@@ -4,15 +4,15 @@ This repository contains a project designed to provide a practical, real world d
 
 ## **Table of Contents**
 
-* [Core Concepts Explained](https://www.google.com/search?q=%23core-concepts-explained)  
-  * [What is a Kubernetes Deployment?](https://www.google.com/search?q=%23what-is-a-kubernetes-deployment)  
-  * [The Principle of Desired State](https://www.google.com/search?q=%23the-principle-of-desired-state)  
-  * [Automated Self Healing](https://www.google.com/search?q=%23automated-self-healing)  
-* [Repository Contents](https://www.google.com/search?q=%23repository-contents)  
-* [Prerequisites](https://www.google.com/search?q=%23prerequisites)  
-* [Step by Step Usage Instructions](https://www.google.com/search?q=%23step-by-step-usage-instructions)  
-* [Understanding the Script's Output](https://www.google.com/search?q=%23understanding-the-scripts-output)  
-* [Conclusion](https://www.google.com/search?q=%23conclusion)
+* [Core Concepts Explained] 
+  * [What is a Kubernetes Deployment?]  
+  * [The Principle of Desired State] 
+  * [Automated Self Healing]  
+* [Repository Contents]  
+* [Prerequisites]  
+* [Step by Step Usage Instructions]  
+* [Understanding the Script's Output]  
+* [Conclusion]
 
 ## **Core Concepts Explained**
 
