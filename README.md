@@ -47,8 +47,8 @@ Follow these steps from your terminal to run the demonstration.
 
 1. Clone the Repository  
    Clone this repository to your local machine.  
-   git clone \<https://github.com/triv321/k8s\_deployment\_project\>  
-   cd \<k8s\_deployment\_project\>
+   git clone https://github.com/triv321/k8s_deployment_project  
+   cd k8s_deployment_project
 
 2. Start Your Local Cluster  
    Ensure your local Kubernetes cluster is running.  
