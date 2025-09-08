@@ -9,17 +9,17 @@ DESIRED_REPLICAS=4
 
 while true; do
   # Get the number of currently ready pods from the deployment's status
-  # Note: We add '|| echo 0' to handle the case where the command might fail and return nothing.
+  # We add '|| echo 0' to handle the case where the command might fail and return nothing.
   READY_REPLICAS=$(kubectl get deployment nginx-deployment -o jsonpath='{.status.readyReplicas}' || echo 0)
 
   echo "Pods Ready: $READY_REPLICAS / $DESIRED_REPLICAS"
 
-  # The -eq operator checks if two numbers are equal
+  # The -eq operator to check equality
   if [ "$READY_REPLICAS" -eq "$DESIRED_REPLICAS" ]; then
     echo "All pods are ready! Proceeding..."
-    break # This command exits the loop
+    break
   else
-    sleep 2 # Wait for 5 seconds before checking again
+    sleep 2 # Wait for 2 seconds before checking again
   fi
 done
 echo

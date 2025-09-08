@@ -1,0 +1,25 @@
+# service.yaml
+
+apiVersion: v1
+kind: Service
+metadata:
+  # The name of our Service
+  name: nginx-service
+spec:
+  # This is the crucial link. The Service will find all Pods with this label.
+  # It MUST match the label in your deployment.yaml's template section.
+  selector:
+    app: nginx
+  # This specifies the type of Service we want to create.
+  type: NodePort
+  # This section defines how the Service handles network ports.
+  ports:
+    # The protocol for the port.
+  - protocol: TCP
+    # The port that the Service itself will be available on inside the cluster.
+    port: 80
+    # The port on the Pods/containers that the traffic should be forwarded to.
+    targetPort: 80
+    # The static port on the Node that this service will be exposed on.
+    # This is optional. If you don't specify it, Kubernetes will pick a random high port.
+    # nodePort: 30007
