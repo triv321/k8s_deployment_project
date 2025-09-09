@@ -1,13 +1,13 @@
 # deployment.yaml
 
-# API Version: Specifies which version of the Kubernetes API to use.
+# API Version: Specifies which version of the Kubernetes API to use
 apiVersion: apps/v1
 # Kind: Specifies the type of object we are creating.
 kind: Deployment
 # Metadata: Data that helps uniquely identify the object, like its name.
 metadata:
   name: nginx-deployment
-# Spec: This is the most important part. It defines the desired state.
+# Spec: defines the desired state.
 spec:
   # Replicas: The number of identical Pods to run.
   replicas: 2
@@ -15,7 +15,7 @@ spec:
   selector:
     matchLabels:
       app: nginx
-  # Template: This is the blueprint for the Pods the Deployment will create.
+  # Template: blueprint for the Pods the Deployment will create.
   template:
     metadata:
       # Labels: Pods are given labels (key-value pairs) so the selector can find them.
@@ -29,4 +29,5 @@ spec:
         image: nginx:1.22.0
         # Ports: The port on the container that should be opened.
         ports:
+
         - containerPort: 80
